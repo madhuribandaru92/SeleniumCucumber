@@ -10,10 +10,11 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.before({
-  "status": "passed"
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\driver\\Web\\chromedriver.exe\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:589)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:177)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:363)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:100)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:105)\r\n\tat steps.Hook.InitializeTest(Hook.java:47)\r\n",
+  "status": "failed"
 });
 formatter.beforestep({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I navigate to the login page",
@@ -23,13 +24,13 @@ formatter.match({
   "location": "steps.LoginStep.iNavigateToTheLoginPage()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.afterstep({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.beforestep({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I enter the following for Login",
@@ -43,13 +44,13 @@ formatter.match({
   "location": "steps.LoginStep.iEnterTheFollowingForLogin(java.util.List\u003csteps.LoginStep$User\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.afterstep({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.beforestep({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I click login button",
@@ -59,13 +60,13 @@ formatter.match({
   "location": "steps.LoginStep.iClickLoginButton()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.afterstep({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.beforestep({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I should see the userform page",
@@ -75,91 +76,13 @@ formatter.match({
   "location": "steps.LoginStep.iShouldSeeTheUserformPage()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.afterstep({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with correct username and password to fail",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "steps.LoginStep.iNavigateToTheLoginPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I enter the following for Login",
-  "rows": [
-    {},
-    {}
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "location": "steps.LoginStep.iEnterTheFollowingForLogin(java.util.List\u003csteps.LoginStep$User\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "steps.LoginStep.iClickLoginButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I should see the userform page wrongly",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "steps.LoginStep.iShouldSeeTheUserformPageWrongly()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\r\n\tat steps.Hook.TearDownTest(Hook.java:58)\r\n",
+  "status": "failed"
 });
 });
